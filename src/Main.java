@@ -8,8 +8,14 @@ public class Main {
         var book3 = new Book("Book2", author3, 2000);
         book3.setPublicationYear(2018);
 
-        System.out.println(book1.getName()+" "+ book1.getPublicationYear()+ " " + book1.getAuthor().getName() +" " + author1.getSurname());
-        System.out.println(book2.getName()+" "+ book2.getPublicationYear()+ " " + book2.getAuthor().getName() + " " + author2.getSurname());
-        System.out.println(book3.getName()+" "+ book3.getPublicationYear()+ " " + book3.getAuthor().getName() + " " + author3.getSurname());
+        System.out.println(book1.getName() + " " + book1.getPublicationYear() + " " + book1.getAuthor().getName() + " " + author1.getSurname());
+        System.out.println(book2.getName() + " " + book2.getPublicationYear() + " " + book2.getAuthor().getName() + " " + author2.getSurname());
+        System.out.println(book3.getName() + " " + book3.getPublicationYear() + " " + book3.getAuthor().getName() + " " + author3.getSurname());
+        System.out.println(book1);
+        System.out.println(book2);
+        System.out.println(book3);
+
+        System.out.println(book3.hashCode());
+
     }
 }
