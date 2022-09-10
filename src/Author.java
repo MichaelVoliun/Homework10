@@ -16,11 +16,21 @@ public class Author {
     public String getSurname() {
         return surname;
     }
-    public String getFullName() {return name + " " + surname;}
+
+    public String getFullName() {
+        return name + " " + surname;
+    }
+
     @Override
-    public String toString() {return "Автор: " + this.name + this.surname;}
+    public String toString() {
+        return "Автор: " + this.name + this.surname;
+    }
+
     @Override
-    public boolean equals(Object object) {return super.equals(object);}
+    public boolean equals(Object object) {
+        return super.equals(object);
+    }
+
     @Override
     public int hashCode() {
         return Objects.hash(name, surname);

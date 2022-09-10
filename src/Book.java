@@ -28,19 +28,20 @@ public class Book {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Book{" + "name=' " + name + '\'' + ", author=" + author + "publicationYear=" + publicationYear + "}";
     }
 
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;
-        if (object == null || getClass() !=object.getClass()) return false;
+        if (object == null || getClass() != object.getClass()) return false;
         Book book = (Book) object;
         return publicationYear == book.publicationYear && Objects.equals(name, book) && Objects.equals(author, book.author);
     }
+
     @Override
-    public int hashCode(){
+    public int hashCode() {
         return Objects.hash(name, author, publicationYear);
     }
 }
